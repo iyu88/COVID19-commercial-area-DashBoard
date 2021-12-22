@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="d3.v3.min.js"></script>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@500&display=swap" rel="stylesheet">
+    <title>Team_Talkative_dashBoard</title>
+</head>
+<body>
+    <div id="__gu_select">
+        <div id="__dashBoard_head">
+            <div id="__dashBoard_title"> 
+                <img id="logo" src="logo.png">
+                <div>
+                    <h3>&ltCOVID-19를 통한 <span id="__point"><u>유동인구와 매출 예측 분석</u></span> 대시보드&gt</h3>
+                    
+                    G조 토커티브 대시보드 
+                </div>
+            </div>
+            <div id="__dashBoard_select">
+                <div id="__gang_nam" class="ad_gu">강남구</div>
+                <div id="__jong_ro" class="ad_gu">종로구</div>
+            </div>
+        </div>
+        <div id="__all_graph" class="__invisible">
+            <button id="__go_back">뒤로가기</button>
+            <button id="__switch_btn">지도 보기</button>
+            <div id="__upper_graph">
+                <div id="__upper_line">
+                    <svg id="__upper_svg"></svg>
+                </div>
+                <div id="__summary">
+                <div id="__filters">
+                    <button id="__day" class="moves_filter __clicked2">요일별</button>
+                    <button id="__time" class="moves_filter">시간대별</button>
+                    <button id="__age" class="moves_filter">연령대별</button>
+                </div>
+                    <svg id="__summary_svg"></svg>
+                </div>
+            </div>
+            <div id="__lower_graph">
+                <div id="__first">
+                    <svg id="__first_svg"></svg> 
+                </div>
+                <div id="__second">
+                    <svg id="__second_svg"></svg>
+                </div>
+                <div id="__third">
+                    <svg id="__third_svg"></svg>
+                </div>
+            </div>
+        </div>
+
+        <div id="__map_graph" class="__invisible">
+            <button id="__go_back2">메인으로</button>
+            <button id="__switch_btn2">그래프 보기</button>
+            <div id="__seoul_map">
+                <div id="__map_title"></div>
+                <img id="img_map" src="">
+                <div id="__street_gangnam" class="__invisible2">
+                    <div id="sample1" class="__sample __clicked">가로수길</div>
+                    <div id="sample2" class="__sample">논현로159길</div>
+                    <div id="sample3" class="__sample">도산대로15길</div>
+                    <div id="sample4" class="__sample">도산대로23길</div>
+                    <div id="sample5" class="__sample">압구정로2길</div>
+                </div>
+                <div id="__street_jongro" class="__invisible2">
+                    <div id="sample6" class="__sample">창신길</div>
+                    <div id="sample7" class="__sample">창신5길</div>
+                    <div id="sample8" class="__sample">창신골목시장</div>
+                    <div id="sample9" class="__sample">동대문역</div>
+                    <div id="sample10" class="__sample">창신2길</div>
+                </div>
+            </div>
+            <div id="__seoul_graph">
+                <div id="__seoul_summary">
+                    <div id="__seoul_change">
+                        <span>주의 : <span class="__for_margin"> 0% ~ 35% </span> </span>
+                        <span>유지 : <span class="__for_margin"> 35% ~ 70% </span> </span>
+                        <span>활성 : <span class="__for_margin"> 70% ~ 100% </span> </span>
+                    </div>
+                    <div id="__seoul_summary_txt">상권 활성 예측 정도 : </div>
+                </div>
+                <div id="__seoul_info">
+                    <div id="__user_select">
+                        <div> 코로나 확진자 : </div>
+                        <label><input type="radio" id="__covid_default" class="__covid_select" name="covid" value="three" checked>3자리수</label>
+                        <label><input type="radio" class="__covid_select" name="covid" value="four">4자리수</label>
+                        <label><input type="radio" class="__covid_select" name="covid" value="five">5자리수</label>
+                    </div>
+                    <div id="__moves_sales">
+                        <div id="__summary_moves_txt">유동인구 예측 : </div>
+                        <div id="__summary_sales_txt">매출 예측 : </div>
+                    </div>
+                </div>
+                <div id="__seoul_line">
+                    <svg id="__seoul_line_svg"></svg>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
